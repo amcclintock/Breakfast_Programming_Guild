@@ -2,10 +2,10 @@
 feb_days = 28
 
 #Start by collecting a month
-month_info = raw_input('Enter a month:')
+month_info = input('Enter a month:')
 
 if month_info == "feb":
-    year_info = raw_input('Enter the year:')
+    year_info = input('Enter the year:')
 
     #To determine whether a year is a leap year, follow these steps:
         #1. If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
