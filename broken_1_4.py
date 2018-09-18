@@ -14,10 +14,10 @@ while outer_loop <= 10:
     #print ("Outer Loop is:", outer_loop)
     while inner_loop < outer_loop + 4:
         #print ("Inner Loop is:", inner_loop)
-        print (outer_loop),
+        print (outer_loop, end="")
         inner_loop = inner_loop + 1
 
 
-    print
+    print()
     outer_loop = outer_loop + 2
 
