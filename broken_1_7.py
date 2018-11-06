@@ -36,8 +36,6 @@ def palindrome_checker():
     user_input = input("Enter a word or phrase to check: ")
     reveresed_user_input = reversed(reveresed_user_input) #find the reverse user_input of the string
 
-    print (reveresed_user_input)
-
     elif (list(user_input) == list(reveresed_user_input)): # No errors here
         print ("\n", user_input, " is a palindrome")
     else:
