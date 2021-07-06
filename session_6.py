@@ -6,7 +6,16 @@
 #Flip the word into pig latin
 def translate_word(word):
     vowels = 'aeiou'
-    first_letter, *remaining_letters = word.lower()
+    
+    # go over list slicing
+    # We can access characters in a string as a list.
+    # [0] => get 0th index. (1st character in the string)
+    # lists can be sliced easily in python
+    # [0:2] => get the first 2 character (0 and 1 index - index 2 is NOT included)
+    # [1:] => get the 1st index and everything after
+    lower_case_word = word.lower()
+    first_letter = lower_case_word.lower()[0]
+    remaining_letters = lower_case_word.lower()[1:]
 
     if first_letter in vowels:
         return word + 'yay'
